@@ -1,51 +1,19 @@
-# Test Task
+# VERIFF CHALLENGE
+Hello guys! Thanks for opportunity, i am very happy with the idea that we could work together soon.
 
-Many photographers have been taking images of birds and wondering what kind of bird it actually is. 
+Before you take the code, i have some considerations here:
+1. Actually i am working a lot in new projects for Avenue Code/MZ GROUP, my actual job, including WEEKENDS with studies and new deadline challenges, so i take your challenge in the weekend, using every free second that i had focus on MUST TO HAVE actions to send you this on monday and i think we have a good code here! It was a good challenge, thank you!
+2. I started using the best practices of OOP and SOLID principles thinking about scalability, maintenability and clean code. 
+3. The tests are simple, but with 83% coverage, with all locally mocked(you can do this in a local machine without internet connection) but off course we can improve the tests in number and complexity.
+4. About performance, using OOP and SOLID the eprformance increase in 30% in the total time spent between original app and actual app. You can check the original app performance here: https://colab.research.google.com/drive/1fpC61Wf7qUD1m-35TnQ09WcGRadXkt1Z?usp=sharing
+5. I used logging info to put logs inside birdclassifier.log(started with init() of ImageClassifier).
+6. Tensorflow warnings about gpu/cuda and saver can be solved so this will be a good future improvement.
+7. Docker will be a good improvement but this is a NICE-TO-HAVE in tasks description(bonus) so i focused on do my best with time i have for now and i think we have a good delivery here, can you send some feedbacks about it? thanks!
 
-A bunch of data scientists have been working on a model to help them out. 
+## Local setup
 
-While the model\* is performing well a lot of corners were cut to get this model to production\** and the service could certainly use some love from a software engineer.
+1) Install Python 3.8
 
-Your task is to:
-* Improve service architecture
-* Improve service performance
-* Improve service maintainability, extendability and testability
-
-You can change all parts of the code as you see fit, however:
-* You are not expected to work on ML model performance
-* Model and data have to be fetched online (instead of downloading it to your local machine)
-
-By the end of this task we would like to see, what is a good looking code in your opinion and how much can you optimise latency.
-
-Feel free to play around with the code as much as you like, but in the end we want to see:
-* Your vision of nice code
-* Code running time including images and model downloading and model inference
-* Top 3 results from the model's output per image
-* Proper logging for essential and debug info if necessary
-* Finished work has to be pushed to github and shared with @rivol, @khadrawy, and @suur
-
-Bonus
-* Unit tests with Mocked images and model data (possible to run without internet)
-* Analyse the bottlenecks in your implementation, and report options for improving upon them.
-* Implement your solution using Docker and Kubernetes for the infrastructure layer. The configuration should scale out: adding machines should reduce latency
-
-
-# Local setup
-1) Install Python 3
 2) Install requirements `pip install -r requirements.txt`
+
 3) Run the code `python classifier.py`
-
-gl;hf
-
-\* The model:
-The sample model is taken from Tensorflow Hub:
-https://tfhub.dev/google/aiy/vision/classifier/birds_V1/1
-
-The labels for model outputs can be found here:
-https://www.gstatic.com/aihub/tfhub/labelmaps/aiy_birds_V1_labelmap.csv
-
-The model has been verified to run with TensorFlow 2.
-
-\** Production: The code was deployed as a python service using Docker with Kubernetes for the infrastructure layer.
-
-In case of questions feel free to contact Agu Suur at agu.suur@veriff.net
