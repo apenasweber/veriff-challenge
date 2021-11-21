@@ -2,7 +2,6 @@ absl-py==0.15.0
 astunparse==1.6.3
 atomicwrites==1.4.0
 attrs==21.2.0
-black==21.10b0
 cachetools==4.2.4
 certifi==2021.10.8
 charset-normalizer==2.0.7
@@ -54,7 +53,7 @@ termcolor==1.1.0
 tf-estimator-nightly==2.5.0.dev2021032501
 toml==0.10.2
 tomli==1.2.2
-typing_extensions==4.0.0
+typing_extensions==3.7.4
 urllib3==1.26.7
 Werkzeug==2.0.2
 wrapt==1.12.1

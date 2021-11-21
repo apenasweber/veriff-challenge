@@ -1,13 +1,13 @@
-import os
-import tensorflow.compat.v2 as tf
-import tensorflow_hub as hub
-import cv2
-import urllib.request
-import numpy as np
-import time
 import logging
+import os
+import time
+import urllib.request
 from datetime import datetime
 
+import cv2
+import numpy as np
+import tensorflow.compat.v2 as tf
+import tensorflow_hub as hub
 
 # Getting some unknown linter errors, disable everything to get this to production asap
 # pylint: disable-all
