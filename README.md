@@ -15,5 +15,3 @@ Before you take the code, i have some considerations here:
 1) Install docker if you dont have it
 2) Run container with `docker build -t bird-classifier .` on terminal
 3) Run application with `docker run -t bird-classifier`
-4) If you want see tests and coverage use `docker exec -it bird-classifier /bin/bash` to access bash of application
-5) so run: `coverage report` to see tests coverage or `pytest` to run tests
