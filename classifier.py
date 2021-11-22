@@ -202,18 +202,8 @@ if __name__ == "__main__":
         labels_url=birds_labels_url, image_urls=birds_image_urls
     )
     classifier.main()
-    original_app_total_time = 20.040859937667847
     currently_app_total_time = time.time() - start_time
-    performance_percentage_difference = (
-        (original_app_total_time - currently_app_total_time)
-        / original_app_total_time
-        * 100
-    )
-    print(f"Total Time spent(original app): {original_app_total_time:.2f}s")
     print(f"Total Time spent(currently app): {currently_app_total_time:.2f}s")
-    print(
-        f"{performance_percentage_difference:.2f}% better performance than original classifier.py"
-    )
     print(f"Time spent loading images: {classifier.total_time_load_images:.2f}s")
     print(
         f"Time spent preprocessing images: {classifier.total_time_preprocess_images:.2f}s"
